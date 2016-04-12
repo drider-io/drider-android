@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/toggleButton"
+        android:textOn="Підвезу"
+        android:textOff="Іншим разом"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+     />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:id="@+id/gridLayout">
+        <TableRow android:layout_width="wrap_content" android:padding="5dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/labelACPower"
+            android:text="Живлення підключено"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="@color/colorOff"
+            android:id="@+id/indicatorACPower"
+            />
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:padding="5dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/labelInternet"
+            android:text="Інтернет підключено"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="@color/colorOff"
+            android:id="@+id/indicatorInternet"
+            />
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:padding="5dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/labelActive"
+            android:text="Пошук пасажира"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="@color/colorOff"
+            android:id="@+id/indicatorActive"
+            />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_above="@+id/buttonStats" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="назад"
+        android:id="@+id/buttonStats"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout" />
+
+
+</RelativeLayout>

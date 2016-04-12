@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="io.drider.car.WebViewActivity">
+    <item
+        android:id="@+id/menu_status"
+        android:title=""
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        />
+    <item
+        android:id="@+id/menu_power"
+        android:title="Живлення"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:icon="@mipmap/red"
+        />
+    <item
+        android:id="@+id/menu_internet"
+        android:title="Інтернет"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:icon="@mipmap/red"
+        />
+    <item
+        android:id="@+id/menu_active"
+        android:title="Пошук"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:icon="@mipmap/red"
+        />
+</menu>

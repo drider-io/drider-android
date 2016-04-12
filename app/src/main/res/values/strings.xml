@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Drider.io</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="locationTxt">Continuous Location Update</string>
+
+    <string name="drive_on">Підвезу</string>
+    <string name="drive_off">Не зараз</string>
+
+    <string name="main_switch">App Active</string>
+    <string name="title_activity_web_view">Drider.io</string>
+    <string name="facebook_app_id">1589454371319440</string>
+</resources>
